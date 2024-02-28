@@ -69,7 +69,71 @@ public class Test{
 //        test.doNothing(null);
 //    }
     
+//    OUTPUT 0
+//    int i;
+//    void print(){
+//        System.out.println(i);
+//    }
+//    
+//    public static void main (String[] args){
+//        new Test().print();
+//    }
     
+//    tidak bisa run karena tidak ada method main
+//    class InnerClass{
+//        static int z = 1;
+//    }
     
+//    OUTPUT ERROR
+//    terjadi ambigu pada method doNothing, test.doNothing(null)
+//    public void doNothing(Object object){
+//        System.out.println("Object");
+//    }
+//    public void doNothing(Integer i){
+//        System.out.println("Integer");
+//    }
+//    public void doNothing(Double d){
+//        System.out.println("Double");
+//    }
+//    public static void main(String[] args){
+//        Test test = new Test();
+//        test.doNothing(null);
+//    }
+    
+//    int x = 0;
+//    static int y = 1;
+//    
+//    static class InnerClass{
+//        int z = 2;
+//        public void getValue(){
+////            acces variable here
+//        }
+//    }
+    
+//    OUTPUT ERROR. penamaan method child sama dengan parent
+//    public static void main(String[] args){
+//        One o = new Two();
+//        o.sayHello();
+//    }
+//}
+//
+//class One{
+//    public final void sayHello(){
+//        System.out.println("Parent Hello");
+//    }
+//}
+//
+//class Two extends One{
+//    public void sayHello(){
+//        System.out.println("Child Hello");
+//    }
+//}
+    
+//    TIDAK BISA DICOMPILE
+//    public void TestMethod(){
+//        static class TestInner{
+//            int x =0 ;
+//        }
+//    }
     
 }
