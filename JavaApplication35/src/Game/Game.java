@@ -17,7 +17,7 @@ public class Game {
 //        mengisi atribut player
         jagoan.name = "Gatot Kaca";
         jagoan.speed = 80;
-        jagoan.healthPoint = 0;
+        jagoan.healthPoint = 17;
         
 //        mengakses behaviour (method run)
         jagoan.run();

@@ -7,7 +7,7 @@
  *
  * @author Neendy's
  */
-public class Test{
+//public class Test{
     
 //    OUTPUT 1
 //    private int i = 0;
@@ -20,9 +20,9 @@ public class Test{
 //    }
 //    
 //    public static void main(String[] args){
-//    TestInner = class
-//    inner = object
-//    new = instansiasi
+////    TestInner = class
+////    inner = object
+////    new = instansiasi
 //        TestInner inner = new Test().new TestInner();
 //        inner.sayHi();
 //    }
@@ -38,21 +38,21 @@ public class Test{
     
     
 //    OUTPUT Hello
-//class TestInner{
-//    public void print(){
-//        System.out.println("Hi");
-//    }
-//}
+class TestInner{
+    public void print(){
+        System.out.println("Hi");
+    }
+}
 //
-//public class Test {
-//    public static void main(String[] args){
-//        TestInner t = new TestInner(){
-//            public void print(){
-//                System.out.println("Hello");
-//            }
-//        };
-//        t.print();
-//    }
+public class Test {
+    public static void main(String[] args){
+        TestInner t = new TestInner(){
+            public void print(){
+                System.out.println("Hello");
+            }
+        };
+        t.print();
+    }
     
     
 //    OUTPUT Integer
